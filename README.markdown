@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/pixelglow/PredicatePal.svg)](https://travis-ci.org/pixelglow/PredicatePal)
+
 **PredicatePal** is a Swift DSL for building `NSPredicate` objects.
 
 `NSPredicate` is a Foundation class that specifies how data should be fetched or filtered. The class is an integral part of many other system frameworks such as CloudKit, CoreData, Contacts, EventKit and HealthKit. Its query language is expressive and natural, but since it's typically built by a runtime parser, it can be hard to figure out and slow to build.
@@ -16,7 +18,7 @@ Install
 As an independent project:
 
 * In the Terminal, run `git clone https://github.com/pixelglow/PredicatePal.git`.
-* Within the *ZipZap* directory, open the *PredicatePal.xcodeproj* Xcode project.
+* Within the *PredicatePal* directory, open the *PredicatePal.xcodeproj* Xcode project.
 * In the Xcode project, select either the *PredicatePal (iOS)*, *PredicatePal (OS X)* or *PredicatePal (tvOS)* scheme from the drop down.
 * You can now build, test (OS X only) or analyze with the selected scheme.
 * The built frameworks and test cases are in a subdirectory of *~/Library/Developer/Xcode/DerivedData*.
