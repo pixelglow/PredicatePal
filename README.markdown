@@ -38,6 +38,8 @@ Build an `NSPredicate`:
 	let age: Key<Int>("age")
 	let predicate = *(age < 21 || age > 42) // NSPredicate(format:"age < 21 OR age > 42")
 
+Getting started: [Tutorial](https://github.com/pixelglow/PredicatePal/wiki/Tutorial)
+
 Full syntax guide: [Syntax](https://github.com/pixelglow/PredicatePal/wiki/Syntax)
 
 Require
