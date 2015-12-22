@@ -73,7 +73,7 @@ class ExpressionTests: XCTestCase {
         let age = Key<CLLocation>("age")
         let beauty = Key<CLLocation>("beauty")
         XCTAssertEqual(
-            *(age - beauty),
+            *distance(age, beauty),
             NSExpression(format: "distanceToLocation:fromLocation:(age, beauty)"))
     }
     
