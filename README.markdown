@@ -23,6 +23,15 @@ As an independent project:
 * You can now build, test (OS X only) or analyze with the selected scheme.
 * The built frameworks and test cases are in a subdirectory of *~/Library/Developer/Xcode/DerivedData*.
 
+As a project integrated with your own workspace:
+
+* In the Terminal, run `cd workspace` then `git submodule add https://github.com/pixelglow/PredicatePal.git`.
+* In your Xcode workspace, choose the *File > Add Files to "workspace"* menu item, then within the *PredicatePal* subdirectory pick the *PredicatePal.xcodeproj* Xcode project.
+* Build the *PredicatePal* project at least once.
+* In any project target that will use *PredicatePal*:
+  * In *General > Embedded Binaries*, click on + and add the *PredicatePal.framework* corresponding to your target OS. The framework should appear in both *Embedded Binaries* and *Linked Frameworks and Libraries*.
+* You can now build, test or analyze those project targets.
+
 Using [Carthage](https://github.com/Carthage/Carthage):
 
 * In your `Cartfile`, specify `github "pixelglow/PredicatePal"`.
