@@ -51,3 +51,5 @@ extension Dictionary: IndexType { }
 extension Set: SetType { }
 
 extension CLLocation: LocationType { }
+
+extension NSDate: CompareType { }

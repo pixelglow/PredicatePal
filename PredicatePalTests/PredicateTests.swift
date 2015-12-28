@@ -73,6 +73,54 @@ class PredicateTests: XCTestCase {
             NSPredicate(format: "age != 42"))
     }
     
+    func testLessDate() {
+        let age = Key<NSDate>("age")
+        let now = NSDate()
+        XCTAssertEqual(
+            *(age < now),
+            NSPredicate(format: "age < %@", now))
+    }
+
+    func testLessEqualDate() {
+        let age = Key<NSDate>("age")
+        let now = NSDate()
+        XCTAssertEqual(
+            *(age <= now),
+            NSPredicate(format: "age <= %@", now))
+    }
+    
+    func testGreaterDate() {
+        let age = Key<NSDate>("age")
+        let now = NSDate()
+        XCTAssertEqual(
+            *(age > now),
+            NSPredicate(format: "age > %@", now))
+    }
+    
+    func testGreaterEqualDate() {
+        let age = Key<NSDate>("age")
+        let now = NSDate()
+        XCTAssertEqual(
+            *(age >= now),
+            NSPredicate(format: "age >= %@", now))
+    }
+    
+    func testEqualDate() {
+        let age = Key<NSDate>("age")
+        let now = NSDate()
+        XCTAssertEqual(
+            *(age == now),
+            NSPredicate(format: "age == %@", now))
+    }
+    
+    func testNotEqualDate() {
+        let age = Key<NSDate>("age")
+        let now = NSDate()
+        XCTAssertEqual(
+            *(age != now),
+            NSPredicate(format: "age != %@", now))
+    }
+   
     // NotPredicate
 
     func testNot() {
